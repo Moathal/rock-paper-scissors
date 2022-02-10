@@ -1,0 +1,86 @@
+.body{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+.body div#choices{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    flex: auto;
+}
+.item{
+    max-width: 350px;
+    max-height: 350px;
+    border-style: solid;
+    border-width: 6px; border-color: black;
+    margin: 24px;
+    margin-top: 0px;
+    padding: 6px;
+    border-radius: 26px;
+    flex: auto;
+}
+img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.body div#results{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 5px;
+}
+input{
+    width: 80px;
+    height: 40px;
+    margin: 3px;
+    text-align: center;
+    -moz-appearance: textfield;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(204, 201, 201);
+}
+input::-webkit-inner-spin-button{ -webkit-appearance: none;}
+.Button{
+    min-width: 80px;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 3px;
+    margin: 5px;
+    background-color:rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight:bold;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subject{
+    color: rgb(53, 52, 52); font-size: 20px; 
+    font-weight: bolder; width: 80px; text-align: center; 
+    width: 80px; height: 36px; border-radius: 20px; 
+    background-color:rgb(29, 25, 25);  color: rgb(255, 255, 255);
+    font-size: 18px; font-weight:bold; text-align: center ;
+    padding-top: 11px;margin: 5px;
+}
+.item.hover{
+    border-width: 10px;
+    border-color: rgb(53, 52, 52);
+    border-radius: 30px;
+    margin: 0;
+}
+.item.hover.click{
+    border-color: goldenrod;
+}

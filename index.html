@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./game.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    
+    <div class="body">
+        <div id="form">
+            <h2 class="subject" id="title">
+                Rounds
+            </h2>
+            <input id="input" type="number" value="0">
+            <button id="button" class="Button" type="button" onmousedown=start()>Submit</button>
+        </div>
+        <div id="choices">
+            <div onmouseup="clickup('Paper')" onmousedown="choice('Paper')" onmouseout="out('Paper')"
+                onmouseover="hover('Paper')" id="Paper" class="item"><img src="./icons/new-document.png" alt="Paper">
+            </div>
+            <div onmouseup="clickup('Scissors')" onmousedown="choice('Scissors')" onmouseout="out('Scissors')"
+                onmouseover="hover('Scissors')" id="Scissors" class="item"><img src="./icons/scissors.png"
+                    alt="Scissors"></div>
+            <div onmouseup="clickup('Rock')" onmousedown="choice('Rock')" onmouseout="out('Rock')"
+                onmouseover="hover('Rock')" id="Rock" class="item"><img src="./icons/stone.png" alt="Rock"></div>
+        </div>
+        <div id="results">
+            <h1 style="color: rgb(53, 52, 52);">YOU </h1>
+            <h2 id="humResult"> 0 </h2>
+            <h1 style="color: rgb(53, 52, 52);"> - </h1>
+            <h2 id="compResult"> 0 </h2>
+            <h1 style="color: rgb(53, 52, 52);"> CPU</h1>
+        </div>
+    </div>
 </body>
+<footer style="background: rgb(128, 128, 128); height: 20px;
+padding: 12px;
+display: flex;
+color: #e5e7eb;
+justify-content: center;
+align-items: center;
+margin-top: 8px;">
+   Icons above are designed by
+   <a style="margin-left:5px;" href="https://www.freepik.com"> freepik.com </a>,
+   <a style="margin:5px;" href="https://www.flaticon.com/authors/those-icons"> those-icons </a>
+   and <a style="margin:5px;" href="https://www.flaticon.com/authors/icongeek26"> icongeek26 </a>
+   respectively and all brought by
+   <a style="margin:5px;" href="https://www.flaticon.com"> Flaticon </a>
+   </footer>
 </html>
